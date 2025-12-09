@@ -1,0 +1,67 @@
+<div class="task">
+  <style>
+    .task .panel {
+      background: #7fbe7f;
+      padding: 18px 20px;
+      max-width: 720px;
+    }
+    .task .title {
+      font-weight: 900;
+      font-size: 28px;
+      margin: 0 0 12px;
+      letter-spacing: 1px;
+    }
+    .task .square {
+      width: 90px;
+      height: 90px;
+      border: 3px dashed #d00;
+      margin: 6px 0 12px;
+    }
+    .task .btns {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .task .btns button {
+      margin-right: 10px;
+    }
+    .task .btns button:last-child {
+      margin-right: 0;
+    }
+    .task button {
+      padding: 6px 12px;
+      border: 1px solid #666;
+      background: #eee;
+      cursor: pointer;
+    }
+  </style>
+
+  <div class="panel">
+    <div class="title">ЗАВДАННЯ 4</div>
+
+    <div id="t4box" class="square"></div>
+
+    <div class="btns">
+      <button
+        type="button"
+        onclick="
+        var box=document.getElementById('t4box');
+        var s=box.offsetWidth-15; if(s<15) s=15;
+        box.style.width=s+'px'; box.style.height=s+'px';
+      "
+      >
+        Зменшити
+      </button>
+
+      <button
+        type="button"
+        onclick="
+        var box=document.getElementById('t4box');
+        var s=box.offsetWidth+15;
+        box.style.width=s+'px'; box.style.height=s+'px';
+      "
+      >
+        Збільшити
+      </button>
+    </div>
+  </div>
+</div>

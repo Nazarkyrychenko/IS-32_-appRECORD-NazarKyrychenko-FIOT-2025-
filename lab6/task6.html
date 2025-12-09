@@ -1,0 +1,49 @@
+<div class="task">
+  <style>
+    .task .panel {
+      background: #7fbe7f;
+      padding: 18px 20px;
+      max-width: 720px;
+    }
+    .task .title {
+      font-weight: 900;
+      font-size: 28px;
+      margin: 0 0 12px;
+      letter-spacing: 1px;
+    }
+    .task ul {
+      margin: 6px 0 12px 18px;
+    }
+    .task button {
+      padding: 6px 12px;
+      border: 1px solid #666;
+      background: #eee;
+      cursor: pointer;
+    }
+  </style>
+
+  <div class="panel">
+    <div class="title">ЗАВДАННЯ 6</div>
+
+    <ul id="t6list">
+      <li>1</li>
+      <li>4</li>
+      <li>8</li>
+      <li>16</li>
+      <li>20</li>
+      <li>30</li>
+    </ul>
+
+    <button
+      type="button"
+      onclick="
+      var items=document.querySelectorAll('#t6list li');
+      for(var i=0;i<items.length;i++){
+        items[i].textContent = Number(items[i].textContent) * 2;
+      }
+    "
+    >
+      Подвоїти
+    </button>
+  </div>
+</div>
